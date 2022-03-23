@@ -10,6 +10,8 @@
   Metalsmith Netlify Starter
 </h1>
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/7a58ccd9-9478-4bbc-819a-05c54fe8b41a/deploy-status)](https://app.netlify.com/sites/metalsmith-netlify-starter/deploys)
+
 Based on the Metalsmith blog starter. This starter is setup for content editing with the Netlify CMS and ready to deploy to Netlify with a couple of clicks. Check out a [demo of this starter](https://metalsmith-netlify-cms-starter.netlify.app/).
 
 ## Features
@@ -19,9 +21,9 @@ Based on the Metalsmith blog starter. This starter is setup for content editing 
   - Uses Markdown files for content
   - Uses Nunjucks templates for layout
 
-## Want to try it out now?
+## Try it out now
 
-Deploy to Netlify
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/wernerglinka/metalsmith-netlify-starter)
 
 Simply deploy a copy of the demo website to your Netlify account by clicking the button.  If you don't have an account, you can create one during this process. Netlify has a generous free tier, no credit card needed. 
 
