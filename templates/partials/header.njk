@@ -1,0 +1,25 @@
+<header>
+  <div class="container">
+    <div class="brand">
+      <a class="home-link" href="/"><img src="/assets/images/metalsmith-logo-bug.png" alt="Metalsmith Starter"/></a>
+    </div>
+
+    <div class="main-menu">
+      <ul>
+        {% for menuItem in nav.menu %}
+          <li>
+            <div>
+              {% if menuItem.url === "/" %}
+                {% set path = "home" %}
+              {% else %}
+                {% set path = menuItem.url %}
+              {% endif %}
+              <a href={{ menuItem.url}} class="{{ path | trimSlashes }}">{{ menuItem.label }}</a>
+            </div>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+
+  </div>
+</header>

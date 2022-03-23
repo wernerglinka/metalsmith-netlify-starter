@@ -1,0 +1,19 @@
+{
+  "menu": [
+    {
+      "label": "Go Home",
+      "url": "/",
+      "bodyClass": "home"
+    },
+    {
+      "label": "Other Page",
+      "url": "/other-page",
+      "bodyClass": "otherPage"
+    },
+    {
+      "label": "Blog",
+      "url": "/blog",
+      "bodyClass": "blog"
+    }
+  ]
+}

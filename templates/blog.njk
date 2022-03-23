@@ -1,0 +1,26 @@
+{% extends "layout.njk" %}
+
+{% block body %}
+  <div class="container">
+    <h1>My Blog</h1>
+
+    {{ contents | safe }}
+
+    <ul class="blog-list">
+    {% for blogPost in collections.blog %}
+      
+      <li>
+        <a href="/{{ blogPost.path }}">
+          <h2>{{ blogPost.blogTitle }}</h2>
+          <time datetime="{{ blogPost.date }}">{{ blogPost.date | blogDate }}</time>
+          <img class="blog-image" src="{{ blogPost.image }}" alt="{{ blogPost.blogTitle }}" />
+          <div>{{ blogPost.excerpt }}</div>
+        </a>
+      </li>
+
+    {% else %}
+      <p class="error-message">No blog posts found</p>
+    {% endfor %}
+    </ul>
+  </div>
+{% endblock %}

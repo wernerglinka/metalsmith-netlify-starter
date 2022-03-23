@@ -1,0 +1,15 @@
+{% extends "layout.njk" %}
+
+{% block body %}
+  <div class="container">
+    <article class="blog-post">
+      <h1>{{ blogTitle }}</h1>
+      <time datetime="{{ date }}">{{ date | blogDate }}</time>
+
+      <img class="blog-image" src="{{ image }}" alt="{{ blogTitle }}" />
+
+      {{ contents | safe }}
+
+    </article>
+  </div>
+{% endblock %}

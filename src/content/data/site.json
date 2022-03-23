@@ -1,0 +1,16 @@
+{
+  "title": "Metalsmith Netlify CMS Starter",
+  "description": "Metalsmith Starter with Netlify CMS integration",
+  "author": "werner@glinka.co",
+  "siteURL": "https://metalsmith-netlify-cms-starter.netlify.app/",
+  "siteOwner": "Werner Glinka",
+  "validate": {
+    "google": "",
+    "ms": ""
+  },
+  "social": {
+    "linkedIn": "",
+    "github": ""
+  },
+  "socialImage": "assets/images/metalsmith-starter-social.png"
+}

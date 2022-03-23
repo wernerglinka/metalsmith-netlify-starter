@@ -1,0 +1,53 @@
+{
+  "name": "metalsmith-netlify-cms-starter",
+  "version": "0.0.1",
+  "description": "A Metalsmith starter with Netlify CMS integration",
+  "keywords": [
+    "metalsmith",
+    "starter"
+  ],
+  "author": "werner@glinka.co",
+  "license": "MIT",
+  "scripts": {
+    "start": "cross-env NODE_ENV=development NODE_PATH=./node_modules npm run watch & npm run serve",
+    "build": "cross-env NODE_ENV=production node metalsmith.js",
+    "watch": "nodemon metalsmith.js",
+    "serve": "browser-sync start --server 'build' --files 'build/**'",
+    "edit": "cross-env NODE_ENV=development NODE_PATH=./node_modules npx netlify-cms-proxy-server & npm run watch & npm run serve"
+  },
+  "nodemonConfig": {
+    "watch": [
+      "src",
+      "templates"
+    ],
+    "ext": "js css scss njk json html md"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.27.7",
+    "cross-env": "^7.0.3",
+    "eslint": "^5.3.0",
+    "eslint-config-airbnb": "^17.1.1",
+    "eslint-config-prettier": "^6.15.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-prettier": "^3.1.4",
+    "nodemon": "^2.0.15",
+    "prettier": "^1.19.1"
+  },
+  "dependencies": {
+    "@metalsmith/collections": "^1.2.1",
+    "@metalsmith/drafts": "^1.1.1",
+    "@metalsmith/layouts": "^2.4.0",
+    "@metalsmith/markdown": "^1.4.0",
+    "@metalsmith/permalinks": "^2.4.0",
+    "jstransformer-nunjucks": "^1.0.0",
+    "metalsmith": "^2.4.2",
+    "metalsmith-html-minifier": "^4.0.1",
+    "metalsmith-if": "^0.1.1",
+    "metalsmith-metadata": "^0.0.4",
+    "metalsmith-prism": "github:wernerglinka/metalsmith-prism",
+    "metalsmith-static-files": "^0.1.0"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
