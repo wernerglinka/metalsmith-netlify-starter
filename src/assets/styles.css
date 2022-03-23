@@ -68,6 +68,9 @@ img {
 img[src$='#full-width'] { 
   max-width: 100%;
 }
+img[src$='#netlify-button'] { 
+  max-width: 150px;
+}
 footer {
   background: #444;
   padding: 20px;

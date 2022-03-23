@@ -19,7 +19,7 @@ See the project page on Github.
 
 Or you can click the button to deploy a copy to Netlify.
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/wernerglinka/metalsmith-netlify-starter)
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg#netlify-button)](https://app.netlify.com/start/deploy?repository=https://github.com/wernerglinka/metalsmith-netlify-starter)
 
 <a class="gitter-invite" href="https://gitter.im/metalsmith/community" target="_blank" rel="noopener noreferrer">
 <p>Join the Metalsmith community at <img src="/assets/images/gitter.png" alt="gitter" /> to discuss all-things Metalsmith.</p>

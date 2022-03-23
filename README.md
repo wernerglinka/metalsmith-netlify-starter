@@ -64,6 +64,19 @@ Follow these steps to build a local development environment:
 
     Open the `my-site` directory in your code editor of choice and edit `src/content/index.md`. Save your changes and the browser will update in real time!
 
+4.  **Use the Netlify CMS locally to edit content**
+
+    You have to setup Netlify Identiy as described above before you can use the CMS locally.
+
+    Inside `my-site` run
+    
+    ```shell
+    npx netlify-cms-proxy-server
+    ...
+    npm run edit
+    ```
+    Click the `Login with Netlify Identity` button and you'll see the CMS dashboard.
+
 ## What's included?
 
 A quick look at the top-level files and directories you'll see in this Metalsmith project.
