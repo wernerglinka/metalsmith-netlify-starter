@@ -12,7 +12,7 @@
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/7a58ccd9-9478-4bbc-819a-05c54fe8b41a/deploy-status)](https://app.netlify.com/sites/metalsmith-netlify-starter/deploys)
 
-Based on the Metalsmith blog starter. This starter is setup for content editing with the Netlify CMS and ready to deploy to Netlify with a couple of clicks. Check out a [demo of this starter](https://metalsmith-netlify-cms-starter.netlify.app/).
+Based on the Metalsmith blog starter. This starter is setup for content editing with the Netlify CMS and ready to deploy to Netlify with a couple of clicks. Check out a [demo of this starter](https://metalsmith-netlify-starter.netlify.app/).
 
 ## Features
   - Pages and a blog
