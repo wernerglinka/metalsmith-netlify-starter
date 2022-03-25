@@ -9,7 +9,7 @@ seo:
   canonicalOverwrite: ""
 
 blogTitle: "Ipsum Cras Ullamcorper Fringilla"
-date: "2020-05-10T12:00:00Z"
+date: 2020-05-10T12:00:00Z
 author: ""
 image: "/assets/images/blog4.jpg"
 featuredBlogpost: true
