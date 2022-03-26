@@ -6,8 +6,12 @@
     <title>Netlify CMS</title>
   </head>
   <body>
-    <!-- Include the script that builds the page and powers Netlify CMS -->
+    <script>
+      // This global flag enables manual initialization.
+      window.CMS_MANUAL_INIT = true;
+    </script>
     <script src="https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js"></script>
+    <script type="module" src="./content-models/index.js"></script>
     <!-- Include Netlify Identity for authentication -->
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
     <script type="module" src="./templates/index.js"></script>

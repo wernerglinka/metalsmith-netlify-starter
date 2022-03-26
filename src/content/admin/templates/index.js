@@ -2,7 +2,7 @@ import Post from "./post.js";
 import Page from "./page.js";
 
 // Register components as the preview for entries
-CMS.registerPreviewTemplate("blog", Post);
+CMS.registerPreviewTemplate("posts", Post);
 CMS.registerPreviewTemplate("pages", Page);
 
 // Register any CSS file on the home page as a preview style
