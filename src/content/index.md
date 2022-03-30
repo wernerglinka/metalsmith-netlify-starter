@@ -15,7 +15,7 @@ This simple site template is intended to help you getting started with building 
 
 The rest is left to your imagination.
 
-See the project page on Github.
+See the [project page on Github](https://github.com/wernerglinka/metalsmith-netlify-starter).
 
 Or you can click the button to deploy a copy to Netlify.
 
