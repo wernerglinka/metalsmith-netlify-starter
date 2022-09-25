@@ -24,29 +24,29 @@
     "ext": "js css scss njk json html md"
   },
   "devDependencies": {
-    "browser-sync": "^2.27.7",
+    "browser-sync": "^2.27.10",
     "cross-env": "^7.0.3",
-    "eslint": "^5.3.0",
-    "eslint-config-airbnb": "^17.1.1",
-    "eslint-config-prettier": "^6.15.0",
-    "eslint-plugin-import": "^2.22.1",
-    "eslint-plugin-prettier": "^3.1.4",
-    "nodemon": "^2.0.15",
-    "prettier": "^1.19.1"
+    "eslint": "^8.24.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "nodemon": "^2.0.20",
+    "prettier": "^2.7.1"
   },
   "dependencies": {
-    "@metalsmith/collections": "^1.2.1",
-    "@metalsmith/drafts": "^1.1.1",
-    "@metalsmith/layouts": "^2.4.0",
-    "@metalsmith/markdown": "^1.4.0",
+    "@metalsmith/collections": "^1.2.2",
+    "@metalsmith/drafts": "^1.2.0",
+    "@metalsmith/layouts": "^2.6.0",
+    "@metalsmith/markdown": "^1.6.0",
     "@metalsmith/permalinks": "^2.4.0",
-    "jstransformer-nunjucks": "^1.0.0",
-    "metalsmith": "^2.4.2",
+    "jstransformer-nunjucks": "^1.1.0",
+    "metalsmith": "^2.5.0",
     "metalsmith-html-minifier": "^4.0.1",
     "metalsmith-if": "^0.1.1",
     "metalsmith-metadata": "^0.0.4",
-    "metalsmith-prism": "github:wernerglinka/metalsmith-prism",
-    "metalsmith-static-files": "^0.1.0"
+    "metalsmith-prism": "^4.1.0",
+    "metalsmith-static-files": "^0.2.0"
   },
   "engines": {
     "node": ">=14.0.0"
