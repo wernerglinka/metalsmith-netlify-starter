@@ -9,14 +9,13 @@ const permalinks = require("@metalsmith/permalinks");
 const when = require("metalsmith-if");
 const htmlMinifier = require("metalsmith-html-minifier");
 const assets = require("metalsmith-static-files");
-const metadata = require("metalsmith-metadata");
+const metadata = require("@metalsmith/metadata");
 const prism = require("metalsmith-prism");
 
 const { dependencies } = require("./package.json");
 const isProduction = process.env.NODE_ENV === "production";
 
 // functions to extend Nunjucks environment
-const toUpper = string => string.toUpperCase();
 const spaceToDash = string => string.replace(/\s+/g, "-");
 const condenseTitle = string => string.toLowerCase().replace(/\s+/g, "");
 const UTCdate = date => date.toUTCString("M d, yyyy");
@@ -25,12 +24,11 @@ const trimSlashes = string => string.replace(/(^\/)|(\/$)/g, "");
 
 // Define engine options for the inplace and layouts plugins
 const templateConfig = {
-  directory: "templates",
+  directory: "layouts",
   engineOptions: {
     smartypants: true,
     smartLists: true,
     filters: {
-      toUpper,
       spaceToDash,
       condenseTitle,
       UTCdate,
@@ -53,8 +51,8 @@ Metalsmith(__dirname)
 
   .use(
     metadata({
-      site: "data/site.json",
-      nav: "data/navigation.json",
+      site: "src/content/data/site.json",
+      nav: "src/content/data/navigation.json",
     })
   )
 
